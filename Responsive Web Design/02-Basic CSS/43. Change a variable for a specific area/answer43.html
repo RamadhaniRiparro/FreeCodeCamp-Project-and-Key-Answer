@@ -1,18 +1,51 @@
 <style>
-    .penguin {
-  
-      /* Only change code below this line */
+    :root {
       --penguin-skin: gray;
       --penguin-belly: white;
       --penguin-beak: orange;
-      /* Only change code above this line */
+    }
   
+    body {
+      background: var(--penguin-belly, #c6faf1);
+    }
+  
+    .penguin {
+      /* Only change code below this line */
+      --penguin-belly: white;
+      /* Only change code above this line */
       position: relative;
       margin: auto;
       display: block;
       margin-top: 5%;
       width: 300px;
       height: 300px;
+    }
+  
+    .right-cheek {
+      top: 15%;
+      left: 35%;
+      background: var(--penguin-belly, pink);
+      width: 60%;
+      height: 70%;
+      border-radius: 70% 70% 60% 60%;
+    }
+  
+    .left-cheek {
+      top: 15%;
+      left: 5%;
+      background: var(--penguin-belly, pink);
+      width: 60%;
+      height: 70%;
+      border-radius: 70% 70% 60% 60%;
+    }
+  
+    .belly {
+      top: 60%;
+      left: 2.5%;
+      background: var(--penguin-belly, pink);
+      width: 95%;
+      height: 100%;
+      border-radius: 120% 120% 100% 100%;
     }
   
     .penguin-top {
@@ -53,33 +86,6 @@
       border-radius: 30% 30% 30% 120%;
       transform: rotate(-45deg);
       z-index: -1;
-    }
-  
-    .right-cheek {
-      top: 15%;
-      left: 35%;
-      background: var(--penguin-belly, white);
-      width: 60%;
-      height: 70%;
-      border-radius: 70% 70% 60% 60%;
-    }
-  
-    .left-cheek {
-      top: 15%;
-      left: 5%;
-      background: var(--penguin-belly, white);
-      width: 60%;
-      height: 70%;
-      border-radius: 70% 70% 60% 60%;
-    }
-  
-    .belly {
-      top: 60%;
-      left: 2.5%;
-      background: var(--penguin-belly, white);
-      width: 95%;
-      height: 100%;
-      border-radius: 120% 120% 100% 100%;
     }
   
     .right-feet {
@@ -167,10 +173,6 @@
       border-radius: 50%;
     }
   
-    body {
-      background:#c6faf1;
-    }
-  
     .penguin * {
       position: absolute;
     }
@@ -198,5 +200,3 @@
       <div class="beak-bottom"></div>
     </div>
   </div>
-
-
